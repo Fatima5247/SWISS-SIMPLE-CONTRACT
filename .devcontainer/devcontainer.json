@@ -1,0 +1,60 @@
+{
+"name": "SWISS-SIMPLE-CONTRACT Dev Environment", 
+"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+// Enable Docker daemon inside the Codespace (Docker-in-Docker)
+"features": {
+"ghcr.io/devcontainers/features/docker-in-docker:2": {
+"version": "latest"
+},
+"ghcr.io/devcontainers/features/git:1": {},
+"ghcr.io/devcontainers/features/node:1": {
+"version": "lts"
+}
+},
+
+"customizations": {
+"vscode": {
+"settings": {
+"terminal.integrated.shell.linux": "/bin/bash"
+},
+"extensions": [
+"ms-azuretools.vscode-docker",
+"esbenp.prettier-vscode"
+]
+}
+},
+
+// Start Docker daemon automatically after container launch
+"postStartCommand": "sudo service docker start && docker version"
+}
+{
+"name": "SWISS-SIMPLE-CONTRACT Dev Environment", 
+"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+// Enable Docker daemon inside the Codespace (Docker-in-Docker)
+"features": {
+"ghcr.io/devcontainers/features/docker-in-docker:2": {
+"version": "latest"
+},
+"ghcr.io/devcontainers/features/git:1": {},
+"ghcr.io/devcontainers/features/node:1": {
+"version": "lts"
+}
+},
+
+"customizations": {
+"vscode": {
+"settings": {
+"terminal.integrated.shell.linux": "/bin/bash"
+},
+"extensions": [
+"ms-azuretools.vscode-docker",
+"esbenp.prettier-vscode"
+]
+}
+},
+
+// Start Docker daemon automatically after container launch
+"postStartCommand": "sudo service docker start && docker version"
+}
